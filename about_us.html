@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {
+  height: 100%
+}
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Amatic SC", sans-serif
+}
+.menu {
+  display: none
+}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("image/bc2.jpg");
+  min-height: 90%;
+}
+table, th, td {
+    border:1px solid yellow;
+    text-align: center;
+}
+.img {
+  background-image: url('image/bc3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:fit-content;
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="#time" class="w3-bar-item w3-button">TIME TABLE</a>
+    <a href="#target" class="w3-bar-item w3-button">GRADES</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">MY<br>ACADEMIC</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">ACADEMIC DETAILS</a></p>
+  </div>
+</header>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="time">
+    <div class="w3-content">
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">TIME TABLE</h1>
+      <table style="width:100%">
+        <tr>
+          <th>TIMES</th>
+          <th>SUNDAY</th>
+          <th>MONDAY</th>
+          <th>TUEDAY</th>
+          <th>WEDNESDAY</th>
+          <th>THURSDAY</th>
+        </tr>
+        <tr>
+          <td>0800-0900</td>
+          <td rowspan="2" style="background-color: red">CSC508</td>
+          <td rowspan="2" style="background-color: rgb(38, 0, 255)">CSC577</td>
+          <td rowspan="2" style="background-color: rgb(180, 2, 136)">CSC569</td>
+          <td rowspan="2"> </td>
+          <td rowspan="2"> </td>
+        </tr>
+        <tr>
+          <td>0900-1000</td>
+        </tr>
+        <tr>
+          <td>1000-1100</td>
+          <td rowspan="2" style="background-color: rgb(180, 2, 136)">CSC569</td>
+          <td rowspan="2" style="background-color: rgb(10, 233, 22)">CSC574</td>
+          <td rowspan="2"> </td>
+          <td rowspan="2" style="background-color: rgb(38, 0, 255)">CSC577</td>
+          <td rowspan="2" style="background-color: rgb(243, 83, 230)">TMC451</td>
+        </tr>
+        <tr>
+          <td>1100-1200</td>
+        </tr>
+        <tr>
+          <td>1200-1300</td>
+          <td style="background-color: rgb(184, 135, 3)">CTU554</td>
+          <td rowspan="2" style="background-color: rgb(1, 231, 201)">CSC584</td>
+          <td rowspan="2" style="background-color: rgb(238, 93, 93)">ELC650</td>
+          <td style="background-color: rgb(184, 135, 3)">CTU554</td>
+        </tr>
+        <tr>
+          <td>1300-1400</td>
+        </tr>
+        <tr>
+          <td>1400-1500</td>
+          <td rowspan="2"> </td>
+          <td rowspan="2"> </td>
+          <td rowspan="2" style="background-color: red">CSC508</td>
+          <td rowspan="2"> </td>
+          <td rowspan="2" style="background-color: rgb(1, 231, 201)">CSC584</td>
+        </tr>
+        <tr>
+          <td>1500-1600</td>
+        </tr>
+        <tr>
+          <td>1600-1700</td>
+          <td rowspan="2"> </td>
+          <td rowspan="2"> </td>
+          <td rowspan="2" style="background-color: rgb(10, 233, 22)">CSC574</td>
+          <td rowspan="2"> </td>
+          <td rowspan="2"> </td>
+        </tr>
+        <tr>
+          <td>1700-1800</td>
+        </tr>
+      </table>
+      </div>
+  </div>
+
+<!-- Menu Container -->
+<div class="img w3-container w3-padding-64 w3-xxlarge" id="target">
+
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="color:white; margin-bottom:64px">TARGET GRADES</h1>
+
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'jd');" id="myLink">
+        <div class="tablink w3-padding-large w3-hover-red">SUBJECT</div>
+      </a>
+    </div>
+
+    <div id="jd"  class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>CSC574</b> <span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">DYNAMIC WEB APPLICATION DEVELOPMENT</p>
+      <hr>
+   
+      <h1><b>CSC569</b> <span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">PRINCIPLE OF COMPILER</p>
+      <hr>
+      
+      <h1><b>CSC508</b> <span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">DATA STRUCTURE</p>
+      <hr>
+
+      <h1><b>CSC577</b> <span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">SOFTWARE ENGINEERING</p>
+      <hr>
+
+      <h1><b>CSC584</b><span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">ENTERPRISE PROGRAMMING</p>
+      <hr>
+
+      <h1><b>ELC650</b><span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">ENGLISH FOR PROFESSIONAL INTERACTION</p>
+      <hr>
+
+      <h1><b>TMC451</b><span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">INTRODUCTORY MANDARIN(LEVEL2)</p>
+      <hr>
+
+      <h1><b>CTU554</b><span class="w3-right w3-tag w3-dark-grey w3-round">A</span></h1>
+      <p class="w3-text-grey">VALUES AND CIVILIZATION</p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-48 w3-xxlarge">
+  <p>tacenim</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
