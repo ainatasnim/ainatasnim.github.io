@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>About Me</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <style>
+        body {
+            background-image: url('image/pic5.jpg');
+            color: white;
+        }
+        #header {
+            text-align: center;
+            padding: 10px;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+    </style>
+    <body>
+        <div id="navbar">
+            <a href="Home.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="academic.html">Academic</a>
+            <a href="formPage.html">Contact</a>
+        </div>
+        
+        <div id="cont1">
+            <div id="header">
+                <h1 style="margin-top: 50px;">MY RESUME</h1>
+            </div>
+            <div id="cont2"> 
+                <div id="main1">
+                    <div id="main2">
+                        <img src="image/tas.jpg" style="width:100%">
+                        <p><i class="fas fa-briefcase" style='font-size:20px; color:rgb(238, 255, 0)'></i>  Degree Student</p>
+                        <p><i class="fas fa-home" style='font-size:20px; color:rgb(238, 255, 0)'></i>
+                            Pasir Puteh, Kelantan</p>
+                        <p><i class="fas fa-envelope" style='font-size:20px; color:rgb(238, 255, 0)'></i>  ainatasnim@uitm.edu.my</p>
+                        <p><i class="fas fa-phone-square" style='font-size:20px; color:rgb(238, 255, 0)'></i>  012-3456789</p>
+                        <hr>
+                        <p><h2><i class="fas fa-asterisk" style='font-size:22px; color:rgb(238, 255, 0)'></i> Skills</h2></p>
+                        <p>Programming</p>
+                        <div class="skills program">90%</div>
+                        <p>Web Designer</p>
+                        <div class="skills multi">70%</div>
+                        <p>MultiMedia</p>
+                        <div class="skills sing">40%</div><br>
+                        <hr>
+                        <p><h2><i class="fas fa-globe-asia" style='font-size:22px; color:rgb(238, 255, 0)'></i>  Languages</h2></p>
+                        <p>Malay</p>
+                        <div class="skills malay"></div>
+                        <p>English</p>
+                        <div class="skills eng"></div>
+                        <p>Korea</p>
+                        <div class="skills kor"></div><br>
+                    </div>
+                </div>
+                <div id="main3">
+                    <div id="main4">
+                        <h2><i class="fas fa-briefcase" style='font-size:25px; color:rgb(238, 255, 0)'></i>  WORK EXPERIENCE</h2><br>
+                        <p><h3>Warung Dusun GearBox Restaurant</h3></p>
+                        <p>Part-time: casher and taking order</p>
+                        <b><hr></b>
+                        <p><h3>Pejabat Daerah Besut</h3></p>
+                        <p>Diploma Internship</p>
+                    </div>
+                </div>
+                <hr><br>
+                <div id="main3">
+                    <div id="main4">
+                        <h2><i class="fas fa-certificate" style='font-size:25px; color:rgb(238, 255, 0)'></i>  EDUCATIONS</h2><br>
+                        <p><h3>University Technology Mara (UiTM) Cendering, Terengganu</h3></p>
+                        <p><i class="far fa-calendar-alt" style='color:rgb(238, 255, 0)'></i>  2021 - now</p>
+                        <p>Bachelor Degree</p>
+                        <hr>
+                        <p><h3>University Technology Mara (UiTM) Machang, Kelantan</h3></p>
+                        <p><i class="far fa-calendar-alt" style='color:rgb(238, 255, 0)'></i>  2018 - 2020</p>
+                        <p>Diploma</p>
+                        <hr>
+                        <p><h3>MARA Junior Science College (MJSC) Besut</h3></p>
+                        <p><i class="far fa-calendar-alt" style='color:rgb(238, 255, 0)'></i>  2016 - 2017</p>
+                        <p>Secondary School</p>
+                        <hr>
+                        <p><h3>SMK(A) Dato' Ismail</h3></p>
+                        <p><i class="far fa-calendar-alt" style='color:rgb(238, 255, 0)'></i>  2013 - 2016</p>
+                        <p>Secondary School</p><br>
+                    </div>
+                </div>
+                <hr><br>
+                <div id="main3">
+                    <div id="main4">
+                        <h2><i class="fas fa-futbol" style='font-size:25px; color:rgb(238, 255, 0)'></i>  SPORT</h2><br>
+                        <p>Volley Ball</p>
+                        <p>Badminton</p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer"><br><br>
+                (c) 2021 copyright: tasnim.com
+            </div>
+        </div>
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-40px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </body>
+</html>

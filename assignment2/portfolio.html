@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        margin: 0;
+        font-family: Arial;
+        background-image:url('image/pic3.jpg');
+        }
+
+        .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        }
+
+        .column img {
+        opacity: 0.8; 
+        cursor: pointer; 
+        }
+
+        .column img:hover {
+        opacity: 1;
+        }
+
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        .container {
+        position: relative;
+        display: none;
+        }
+    </style>
+    <body>
+        <div id="navbar">
+            <a href="Home.html">Home</a>
+            <a href="academic.html">Academic</a>
+            <a href="formPage.html">Contact</a>
+        </div>
+        <div style="text-align:center; color: white"><br><br><br>
+            <h2>MY MOVIE GALLERY</h2>
+            <p>Click on the images below:</p>
+        </div>
+
+    <!-- The four columns -->
+        <div class="row" style="color: white">
+            <div class="column">
+            <img src="image/conjuring.jpg"style="width:100%" onclick="myFunction(this);">
+                <p>Title : THE CONJURING: THE DEVIL MAKE ME DO IT</p>
+                <p>Release Date : June 4, 2021</p>
+                <p>Genre : Horror/Thriller</p>
+                <p>Rating : 6.3/10</p>
+            </div>
+            <div class="column">
+            <img src="image/spacesweepers.jpg" style="width:100%" onclick="myFunction(this);">
+                <p>Title : SPACE SWEEPERS</p>
+                <p>Release Date : February 5, 2021</p>
+                <p>Genre : Action</p>
+                <p>Rating : 6.6/10</p>
+            </div>
+            <div class="column">
+            <img src="image/junglecriuse.jpg" style="width:100%" onclick="myFunction(this);">
+                <p>Title : JUNGLE CRUISE</p>
+                <p>Release Date : July 30, 2021</p>
+                <p>Genre : Advantures</p>
+                <p>Rating : 6.6/10</p>
+            </div>
+            <div class="column">
+                <img src="image/ssquad.jpg" style="width:100%" onclick="myFunction(this);">
+                    <p>Title : SUICIDE SQUAD</p>
+                    <p>Release Date : August 6, 2021</p>
+                    <p>Genre : Actions</p>
+                    <p>Rating : 7.3/10</p>
+            </div>
+        </div>
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width: 100%;">
+            <div id="imgtext"></div>
+        </div><br><br><br><br><br>
+
+    <!-- video -->
+        <h2  style="color: white; text-align: center" >WATCH THE TRAILER : </h2>
+        <h5  style="color: white; text-align: center" >CLICK THE POSTER BELOW</h5><br>
+        <div class="responsive">
+            <div class="gallery">
+            <a target="_blank" href="video/Conjuring.mp4" type="video/mp4">
+                <img src="image/conj.jpg" width="600" height="400">
+            </a>
+            <div class="desc">Summary :<br> Paranormal investigators Ed and Lorraine Warren take on one of the most sensational 
+                cases of their careers after a cop stumbles upon a dazed and bloodied young man 
+                walking down the road. Accused of murder, the suspect claims demonic possession 
+                as his defense, forcing the Warrens into a supernatural inquiry unlike anything 
+                they've ever seen before</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+            <a target="_blank" href="video/SpaceSweepers.mp4" type="video/mp4">
+                <img src="image/spaces.jpg" width="600" height="400">
+            </a>
+            <div class="desc">Summary : <br> After snatching a crashed space shuttle in the latest debris chase, 
+                Spaceship Victory's crew members find a 7-year-old girl inside. They realise that she's 
+                the humanlike robot wanted by UTS Space Guards, and decide to demand a ransom 
+                in exchange.</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+            <a target="_blank" href="video/JungleCruise.mp4" type="video/mp4">
+                <img src="image/jc.jpg" width="600" height="400">
+            </a>
+            <div class="desc">Summary : <br> Dr. Lily Houghton enlists the aid of wisecracking skipper Frank Wolff 
+                to take her down the Amazon in his ramshackle boat. Together, they search for an ancient 
+                tree that holds the power to heal-a discovery that will change the future of 
+                medicine.</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+            <a target="_blank" href="video/suicidesquad.mp4" type="video/mp4">
+                <img src="image/ss.jpg" width="600" height="400">
+            </a>
+            <div class="desc">Summary :<br> Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection 
+                of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as 
+                they are dropped off at the remote, enemy-infused island of Corto Maltese.</div>
+            </div><br><br><br>
+        </div>
+        <div id="footer"><br><br>
+            (c) 2021 copyright: tasnim.com
+        </div>
+
+        <script>
+            function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+            }
+        </script>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-40px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </body>
+</html>

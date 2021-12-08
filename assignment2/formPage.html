@@ -1,0 +1,92 @@
+ <html>
+    <head>
+        <title>Form Page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    </head>
+    <style>
+        body {
+            background-image: url('image/pic.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: 100% 100%;
+        }
+    </style>
+    <body>
+        <div id="navbar">
+            <a href="Home.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="academic.html">Academic</a>
+        </div>
+        <div id="container">
+            <div id="container1">
+                <div id="header">
+                    <h1>FEEDBACK FORM</h1>
+                </div>
+                <h3>Feedback Type : </h3>
+                <form onsubmit="popBox()">
+                    <input type="radio" id="comments" name="jenis" value="Comments" required>
+                    <label for="comments">Comments</label>
+                    <input type="radio" id="suggest" name="jenis" value="Suggestions" required>
+                    <label for="suggest">Suggestions</label>
+                    <input type="radio" id="question" name="jenis" value="Questions" required>
+                    <label for="question">Questions</label><br><br>
+
+                    <h3>Describe Your FeedBack : </h3>
+                    <textarea placeholder="Leave your Message Here" required></textarea><br><br>
+
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" placeholder="First Name" required><br><br>
+
+                    <label for="age">Age : </label>
+                    <input type="text" id="age" placeholder="age" required><br><br>
+
+                    <label for="email">Email :</label>
+                    <input type="text" id="email" placeholder="eg: myname@gmail.com" required><br><br>
+
+                    <label for="date">Date : </label>
+                    <input type="date" value="date" required><br><br><br>
+
+                    <button class="button button1">SUBMIT</button>
+                </form>
+            </div>
+            <div id="container2">
+                <br><br>
+                <h2>CONTACT : </h2>
+                <p><i class="fas fa-phone-square" style="font-size:24px;"></i>  012-3456789</p>
+                <p><i class="fa fa-envelope" style="font-size:24px;"></i><a href="mailto:staarla@gmail.com">   ainatasnim@uitmterengganu</a></p>
+                    
+                <br><br>
+                <h2>SOCIAL </h2>
+                <p><i class="fab fa-facebook-square" style="font-size:24px;"></i>
+                <p><i class="fab fa-instagram" style="font-size:24px;"></i></p>
+                <p><i class="fab fa-tumblr-square" style="font-size:24px;"></i></p>
+
+                <br><br>
+                <p> We appriciate the time you have taken to help us to improve out site and service.
+                    Please use the form to provide your feedback.Thank You.
+                </p>
+            </div>
+        </div>
+        <div id="footer"><br><br>
+            (c) 2021 copyright: tasnim.com
+        </div>
+        <script>
+            function popBox() {
+                alert("Your Message have Successfully Save!")
+            }
+       </script>
+       <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-40px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+    </body>
+ </html>
